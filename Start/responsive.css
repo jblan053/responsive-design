@@ -1,0 +1,31 @@
+@media screen and (max-width: 430px) {
+  .nav {
+    width: 300px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+    z-index: 10;
+    background-color: #fff;
+  }
+
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hamburger_icon {
+    display: inline-block;
+    width: 10%;
+    padding-top: 15px;
+    position: absolute;
+    right: 0;
+  }
+}
